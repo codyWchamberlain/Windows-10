@@ -39,6 +39,10 @@ ul#myTab li a:hover {
 	color: #ccc;
 }
 
+ul#myTab li.active a {
+	background: #585858;
+}
+
 #home,
 #hardware,
 #procedures,
