@@ -1,0 +1,151 @@
+/* bootstrap */
+body {
+	background: #3b3b3b;
+}
+
+.tile {
+	text-align: center;
+	height: 10em;
+	padding: 5em 5em 10em 5em;
+}
+.tile:hover {
+	transition: opacity 1s ease;
+	opacity: .6;
+}
+
+/* Links */
+.tile a {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+.tile p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Typography */
+h1,
+h2 {
+	font-weight: 100;
+	color: white;
+}
+
+p {
+	font-size: 1.75em;
+	font-weight: 200;
+	line-height: 1.75em;
+	color: gray;
+}
+
+/* Utility Classes */
+.bottom {
+	margin-bottom: 2em;
+}
+
+/* Windows 10 Colors */
+.amber {
+	background: #f0a209;
+}
+
+.magenta {
+	background: #d80073;
+}
+
+.mauve {
+	background: #76608a;
+}
+
+.sienna {
+	background: #7a3b3f;
+}
+
+.brown {
+	background: #825a2c;
+}
+
+.lime {
+	background: #a3c300;
+}
+
+.olive {
+	background: #6d8663;
+}
+
+.steel {
+	background: #647687;
+}
+
+.cobalt {
+	background: #0050ee;
+}
+
+.indigo {
+	background: #6a00fe;
+}
+
+.orange {
+	background: #f96700;
+}
+
+.teal {
+	background: #00aaa8;
+}
+
+.crimson {
+	background: #a20025;
+}
+
+.green {
+	background: #60a917;
+}
+
+.pink {
+	background: #f471d0;
+}
+
+.violet {
+	background: #aa00ff;
+}
+
+.cyan {
+	background: #1ba1e2;
+}
+
+.emerald {
+	background: #008900;
+}
+
+.red {
+	background: #e51400;
+}
+
+.yellow {
+	background: #d8c100;
+}
+
+.imgspace {
+	margin-bottom: 10px;
+	}
+
+/* Page Helpers */
+
+/* Pages */
+#somedivwithinfo,
+#startmenu, 
+#printing ,
+#backup,
+#cortana,
+#wireless,
+#apps,
+#edge{
+  background: #464646;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#startmenu p {
+  color: white;
+}
