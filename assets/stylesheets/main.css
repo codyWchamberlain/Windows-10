@@ -13,6 +13,41 @@ body {
 	opacity: .6;
 }
 
+.tile-info {
+	padding: 2em 4.5em;
+}
+
+/* Nav */
+ul#myTab  {
+	background: #4c4c4c;
+}
+
+ul#myTab li {
+	padding: 1em;
+	border: 0;
+}
+
+ul#myTab li a {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border: 0;
+	color: #fff;
+}
+
+ul#myTab li a:hover {
+	background: #585858;
+	color: #ccc;
+}
+
+#home,
+#hardware,
+#procedures,
+#support,
+#lobster {
+	background: #585858;
+	padding: 2em 4.5em;
+}
+
 /* Links */
 .tile a {
 	color: white;
@@ -36,6 +71,10 @@ p {
 	font-weight: 200;
 	line-height: 1.75em;
 	color: gray;
+}
+
+p.white-text {
+	color: #fff;
 }
 
 /* Utility Classes */
@@ -128,6 +167,11 @@ p {
 	margin-bottom: 10px;
 	}
 
+hr {
+	height: 0;
+	border: .5px solid #3e3e3e;
+	margin: 2.5em 0;
+}
 /* Page Helpers */
 
 /* Pages */
