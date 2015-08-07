@@ -13,6 +13,45 @@ body {
 	opacity: .6;
 }
 
+.tile-info {
+	padding: 2em 4.5em;
+}
+
+/* Nav */
+ul#myTab  {
+	background: #4c4c4c;
+}
+
+ul#myTab li {
+	padding: 1em;
+	border: 0;
+}
+
+ul#myTab li a {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border: 0;
+	color: #fff;
+}
+
+ul#myTab li a:hover {
+	background: #585858;
+	color: #ccc;
+}
+
+ul#myTab li.active a {
+	background: #585858;
+}
+
+#home,
+#hardware,
+#procedures,
+#support,
+#lobster {
+	background: #585858;
+	padding: 2em 4.5em;
+}
+
 /* Links */
 .tile a {
 	color: white;
@@ -36,6 +75,10 @@ p {
 	font-weight: 200;
 	line-height: 1.75em;
 	color: gray;
+}
+
+p.white-text {
+	color: #fff;
 }
 
 /* Utility Classes */
@@ -128,6 +171,11 @@ p {
 	margin-bottom: 10px;
 	}
 
+hr {
+	height: 0;
+	border: .5px solid #3e3e3e;
+	margin: 2.5em 0;
+}
 /* Page Helpers */
 
 /* Pages */
@@ -155,45 +203,6 @@ p {
 #apps p,
 #edge p{
 	color: white;
+
 }
 
-nav ul ul {
-	display: none;
-}
-
-	nav ul li:hover > ul {
-		display: block;
-	}
-
-nav ul {
-	background: #efefef; 
-	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
-	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
-	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
-	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding: 0 20px;
-	border-radius: 10px;  
-	list-style: none;
-	position: relative;
-	display: inline-block;
-}
-	nav ul:after {
-		content: ""; clear: both; display: block;
-	}
-nav ul li {
-	float: left;
-}
-	nav ul li:hover {
-		background: #4b545f;
-		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
-	}
-		nav ul li:hover a {
-			color: #fff;
-		}
-	
-	nav ul li a {
-		display: block; padding: 25px 40px;
-		color: #757575; text-decoration: none;
-	}
