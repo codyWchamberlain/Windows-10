@@ -179,7 +179,7 @@ hr {
 /* Page Helpers */
 
 /* Pages */
-#somedivwithinfo,
+#whatsnew,
 #startmenu, 
 #printing ,
 #backup,
@@ -187,13 +187,20 @@ hr {
 #wireless,
 #apps,
 #edge{
-  background: #464646;
+  	background: #464646;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 }
 
-#startmenu p {
-  color: white;
+#whatsnew p,
+#startmenu p, 
+#printing p,
+#backup p,
+#cortana p,
+#wireless p,
+#apps p,
+#edge p{
+	color: white;
 }
