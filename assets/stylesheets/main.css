@@ -24,7 +24,6 @@ ul#myTab  {
 }
 
 ul#myTab li {
-	padding: 1em;
 	border: 0;
 }
 
@@ -37,20 +36,11 @@ ul#myTab li a {
 
 ul#myTab li a:hover {
 	background: #585858;
-	color: #ccc;
+	color: #fff;
 }
 
 ul#myTab li.active a {
 	background: #585858;
-}
-
-#home,
-#hardware,
-#procedures,
-#support,
-#lobster {
-	background: #585858;
-	padding: 2em 4.5em;
 }
 
 /* Links */
