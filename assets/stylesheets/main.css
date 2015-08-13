@@ -18,32 +18,32 @@ body {
 	padding: 2em 4.5em;
 }
 
-ul{
+nav ul{
     padding: 0;
     list-style: none;
     background: #3b3b3b;
 }
-ul a:hover{
+nav ul a:hover{
 	text-decoration: none;
 }
-ul li {
+nav ul li {
     display: inline-block;
     position: relative;
     line-height: 21px;
     text-align: left;
 }
-    ul li a{
+  nav ul li a{
         font-size: 1em;
         display: block;
     	padding: 1em 1.5em;
         color: #fff;
         text-decoration: none;
     }
-    ul li a:hover{
+   nav ul li a:hover{
         color: #fff;
         background: #585858
     }
-    ul li ul.dropdown{
+  nav ul li ul.dropdown{
         min-width: 125px; /* Set width of the dropdown */
         background: #3b3b3b;
         display: none;
@@ -51,10 +51,10 @@ ul li {
         z-index: 999;
         left: 0;
     }
-    ul li:hover ul.dropdown{
+  nav ul li:hover ul.dropdown{
         display: block;	/* Display the dropdown */
     }
-    ul li ul.dropdown li{
+   nav ul li ul.dropdown li{
         display: block;
     }
 
@@ -88,6 +88,7 @@ ul#myTab li.active a {
 	color: white;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 }
 .tile p {
 	margin: 0;
