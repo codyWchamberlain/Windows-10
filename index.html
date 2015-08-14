@@ -33,6 +33,13 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Open Index.html maximized when launched -->
+    <script type="text/javascript">
+    window.onload = function() {
+    window.moveTo(0, 0);
+    window.resizeTo(screen.availWidth, screen.availHeight);
+    }
+    </script>
 </head>
 <body>
     
@@ -81,7 +88,7 @@
             </div>
             <div class="col-sm-6 bottom">
                 <div class="tile red" data-target='edge'>
-                    <h2><a href="#">Microsoft Edge</a></h2>
+                    <h2><a href="#">Edge </a></h2>
                 </div>
             </div>
             <div class="col-sm-4 bottom">
@@ -183,7 +190,7 @@
 	
 	<div id="edge" class="emerald overlay" style="display: none;">
         <div class="container">
-            <h2><a href="#">Microsoft Edge</a></h2>
+            <h2><a href="#">Edge</a></h2>
             <p>Welcome to the newest way to surf PolicyCenter! formally known as 'Internet Explorer', Microsoft has totally redesigned this application from the bottom up&mdash;including a new icon!</p>
 			<img src="assets/images/edgeicon.png"/>
 			<p>Essentially, it is the same browser that we have ggrown to love or hate, with a few extra features!</p>
