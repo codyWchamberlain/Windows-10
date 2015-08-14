@@ -101,6 +101,12 @@ ul#myTab li.active a {
 	padding: 0;
 	text-decoration: none;
 }
+
+a {
+	text-decoration: none;
+}
+
+}
 .tile p {
 	margin: 0;
 	padding: 0;
@@ -115,10 +121,10 @@ h3 {
 }
 
 p {
-	font-size: 1.75em;
-	font-weight: 200;
-	line-height: 1.75em;
-	color: gray;
+	font-size: 1.5em;
+	font-weight: 150;
+	line-height: 1.5em;
+	color: white;
 }
 
 p.white-text {
