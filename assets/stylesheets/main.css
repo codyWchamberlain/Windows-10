@@ -121,7 +121,7 @@ h3 {
 }
 
 p {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 150;
 	line-height: 1.5em;
 	color: white;
@@ -223,8 +223,8 @@ p.white-text {
 
 hr {
 	height: 0;
-	border: .5px solid #3e3e3e;
-	margin: 2.5em 0;
+	border: 0.1em solid #464646;
+	margin: 2em 0;
 }
 /* Page Helpers */
 
@@ -247,21 +247,10 @@ hr {
 	top: 0;
 }
 
-#whatsnew p,
-#startmenu p, 
-#printing p,
-#backup p,
-#cortana p,
-#wireless p,
-#apps p,
-#edge p,
-#support p,
-#display p,
-#procedures p{
-	color: white;
-}
 
-#support ul{
+
+
+
+ul li{
 	color: white;
-	font-size: 1.5em;
 }
