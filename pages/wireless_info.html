@@ -63,7 +63,7 @@
         <hr/>
 
         <div class="lime tile-info">
-        <h1>Wireless Change</h1>
+            <h1>Wireless Change</h1>
             <p>This page will contain general information about how to use Wireless Change and how to connect to VPN once Wireless is connected</p>
             <ul>
                 <li>Double click the <strong>Wireless Change</strong> icon on your desktop.  If it is not located there, please see below.</li>
@@ -71,21 +71,76 @@
                     <li>Click the <strong>Start</strong> button</li>
                     <li>In the Windows Search Box, type 'Wireless Change'</li>
                     <li>It should show up under <strong>Programs</strong></li>
+                    <img src="../assets/images/wirelesschange.png">
                 </ol>
                 <li>Once <strong>Wireless Change</strong> loads, you will be presented with a list of Network Connections to choose from.</li>
                 <ol>
                     <li>Click the radio button beside the wireless card</li>
                     <li>Click <strong>Ok</strong></li>
+                    <img src="../assets/images/wirelesschangeapp.png">
                     <li>You will know your Wireless Connection is active when you see the Wireless indicator appear in your Notification Area beside your clock</li>
+                    <img src="../assets/images/wirelessnotificationarea.png">
                 </ol>
             </ul>    
-                <p><strong>NOTE:</strong> By default, the system will always revert back to your Wired (Ethernet) connection when you restart your computer<p>
+            <p><strong>NOTE:</strong> By default, the system will always revert back to your Wired (Ethernet) connection when you restart your computer<p>
             <ul>
                 <li>Now that your Wireless Adapter is active, click the Wireless Indicator icon to bring up the list of Wireless Networks available to you.  From this list, choose the appropriate network and click <strong>Connect</strong></li>
+                <img src="../assets/images/wirelessconnection.png">
                 <li>Most Wireless Networks are secured with a password.  You must know this password in order to connect.  When prompted, enter the password and click <strong>Ok</strong></li>
-                <li>Assuming the password was correct, after a short period, you will successfully connect to the Wireless Network and your Wireless Indicator will show this</li>
+                <img src="../assets/images/wirelesspassword.png">
+                <li>Assuming the password was correct, after a short period, you will successfully connect to the Wireless Network and your Wireless Indicator will confirm this when the bars now display full</li>
+                <img src="../assets/images/wirelessconnected.png">
             </ul>
-            
+            <p><strong>NOTE:</strong> Reverting back yo your wired connection is as simple as re-launching <strong>Wireless Change</strong>, selecting the Ethernet radio button, and clicking <strong>Ok</strong>.</p>
+            <h4>Can I use Wireless+VPN while at the office?</h4>
+            <ul>
+                <li>Wireless connectivity is to be used for convenience sake and should not bused as your primary connection</li>
+                <li>The reasons for this are:</li>
+                <ol>
+                    <li>Wireless connections are much slower and less reliable than wired connections</li>
+                    <li>Security and Software updates are not always distributed over VPN Connections</li>
+                    <li>You login script will not run over VPN.  A login script maps your network drives and printers when you initially login</li>
+                </ol>
+            </ul>
+            <hr/>
+            <h1>VPN (<u>V</u>irtual <u>P</u>rivate <u>N</u>etwork)</h1>
+            <p>After you have successfully connected to a Wireless Network, you will need to connect to the Cooperators network.  In order to accomplish this, simply launch the <strong>VPN Connect</strong> icon found on your desktop.</p>
+            <p>Alternatively, you can manually connect to VPN by clicking your Wireless icon located in the notification area
+            <img src="../assets/images/wirelessconnected.png"></p>
+            <ul>
+                <li>You have three choices to choose from when manually connecting to VPN:</li>
+                <ol>
+                    <li><strong>Co-operators VPN (GSS): </strong>Preferred connection.  It will connect you to the best available network</li>
+                    <li><strong>CGIC L2TP VPN - East: </strong>If GSS Fails, Connect here for Eastern Canada</li>
+                    <li><strong>CGIC L2TP VPN - West:</strong>If GSS Fails, Connect here for Western Canada</li>
+                </ol>
+                <li>Select the VPN Connection you want and click <strong>Connect</strong></li>
+                    <img src="../assets/images/vpnmanualconnect.png">
+                <li>The Connection will show <strong>Connected</strong> if it is successful</li>
+            </ul>
+            <h4>General VPN Troubleshooting</h4>
+            <ul>
+                <li>Error 868</li>
+                <ol>
+                    <li>Confirm you have internet connectivity, try browsing to a website such as www.google.ca</li>
+                    <li>Try to manually connect to each VPN as per instructions mentioned above until you are connected</li>
+                    <li>Restart your modem/router by unplugging it for 30seconds.  <strong>NOTE:</strong> All devices connected to this will be disconnected for this period, including home devices such as computer, tablet, smartphone, etc.</li>
+                    <li>Contact <a href="support_info.html">Technical Support</a> for further assistance if required</li>
+                </ol>
+            </ul>
+            <ul>
+                <li>Error 835</li>
+                <ol>
+                    <li>Try to manually connect to VPN East or VPN West as per instructions mentioned above</li>
+                    <li>Contact <a href="support_info.html">Technical Support</a> to have this problem permanently resolved</li>
+                </ol>
+            </ul>
+            <ul>
+                <li>Error 649</li>
+                <ol>
+                    <li>Contact <a href="support_info.html">Technical Support</a> for further assistance as this error indicates permissions are missing</li>
+                </ol>
+            </ul>
         </div>
     </div>
 </body>
