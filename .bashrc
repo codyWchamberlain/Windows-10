@@ -1,1 +1,4 @@
-alias subl='"c:/Program Files/Sublime Text 2/sublime_text.exe"'
+# .bashrc
+
+alias atom="C:\Users\cody.chamberlain@cgic.cooperators.ca\Downloads\atom.exe"
+alias s="git status -s"

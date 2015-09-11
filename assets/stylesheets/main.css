@@ -3,21 +3,38 @@ body {
 	background: #3b3b3b;
 }
 
-.tile {
-	text-align: center;
-	height: 10em;
-	padding: 5em 5em 10em 5em;
-	
+a.tile {
+		display:block;
+		padding: 3.5em 1em 3.5em 1em;
+		text-align: center;
+		font-size: 2em;
+		color: white;
 }
+
 .tile:hover {
 	transition: opacity 1s ease;
 	opacity: .6;
 }
 
+/* Container properties for pages */
 .tile-info {
-	padding: 2em 4.5em;
+		padding: 3.5em;
 }
 
+/* Pages */
+ul li {
+	color: white;
+}
+
+#breadcrumbs p{
+	font-size: 0.75em;
+	text-transform: uppercase;
+	color: white;
+}
+/* Nav Bar */
+nav {
+	margin: 0;
+}
 nav ul{
     padding: 0;
     list-style: none;
@@ -34,79 +51,55 @@ nav ul li {
     line-height: 21px;
     text-align: left;
 }
-  nav ul li a{
-
-        font-size: 1em;
-        display: block;
-    	padding: 1em 1.5em;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    nav ul li a:hover{
-        color: #fff;
-        background: #585858
-    }
-   nav ul li a:hover{
-        color: #fff;
-        background: #585858;
-    }
-  nav ul li ul.dropdown{
-        min-width: 125px; /* Set width of the dropdown */
-        background: #3b3b3b;
-        display: none;
-        position: absolute;
-        z-index: 999;
-        left: 0;
-    }
-    nav ul li:hover ul.dropdown{
-        display: block;	/* Display the dropdown */
-    }
-    nav ul li ul.dropdown li{
-        display: block;	/* Display the dropdown */
-    }
-   nav ul li ul.dropdown li{
-        display: block;
-    }
-
-/* Nav */
-/*ul#myTab  {
-	background: #4c4c4c;
-}
-
-ul#myTab li {
-	border: 0;
-}
-
-ul#myTab li a {
+nav ul li a{
 	font-size: 1em;
-	/*text-transform: uppercase;*/
-/*	border: 0;
-	color: #fff;
+  display: block;
+  padding: 1em 1.5em;
+	margin: 0;
+  color: #fff;
+  text-decoration: none;
 }
 
-ul#myTab li a:hover {
-	background: #585858;
-	color: #fff;
+nav ul li a:hover{
+  color: #fff;
+  background: #585858
 }
 
-ul#myTab li.active a {
-	background: #585858;
-} 
+nav ul li a:hover{
+  color: #fff;
+  background: #585858;
+}
+
+nav ul li ul.dropdown{
+	min-width: 125px; /* Set width of the dropdown */
+	background: #3b3b3b;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	left: 0;
+}
+
+nav ul li:hover ul.dropdown{
+	display: block;	/* Display the dropdown */
+}
+
+nav ul li ul.dropdown li{
+	display: block;	/* Display the dropdown */
+}
+
+nav ul li ul.dropdown li{
+	display: block;
+}
+
+.active {
+	background-color: #a3c300;
+}
 
 /* Links */
-.tile a {
-	color: white;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-}
-
 a:hover {
 	text-decoration: none;
 }
 
-}
 .tile p {
 	margin: 0;
 	padding: 0;
@@ -226,28 +219,4 @@ hr {
 	height: 0;
 	border: 0.1em solid #464646;
 	margin: 2em 0;
-}
-/* Page Helpers */
-
-/* Pages */
-#whatsnew,
-#startmenu, 
-#printing ,
-#backup,
-#cortana,
-#wireless,
-#apps,
-#edge,
-#support,
-#display,
-#procedures{
-  	background: #464646;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-}
-
-ul li{
-	color: white;
 }
