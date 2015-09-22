@@ -31,6 +31,17 @@ ul li {
 	text-transform: uppercase;
 	color: white;
 }
+
+
+
+a {
+	color: #3b3b3b;
+}
+.printserver a{
+	color: white;
+	font-size: 1.2em;
+}
+
 /* Nav Bar */
 nav {
 	margin: 0;
@@ -92,7 +103,7 @@ nav ul li ul.dropdown li{
 }
 
 .active {
-	background-color: #a3c300;
+	background-color: #585858;
 }
 
 /* Links */

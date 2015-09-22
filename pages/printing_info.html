@@ -38,35 +38,81 @@
     <!-- PRIMARY CONTAINER -->
     <div class="container">
         <h1>Welcome to the Windows 10 Instructional Dashboard</h1>
-        
+
         <nav>
-        <ul>
-            <li><a href="whats_new_info.html">Whats-New?</a></li>
-            <li><a href="start_menu_info.html">Start-Menu</a></li>
-            <li><a href="printing_info.html">Printing</a></li>
-            <li><a href="one_drive_info.html">One-Drive</a></li>
-            <li><a href="cortana_info.html">Cortana</a></li>
-            <li><a href="wireless_info.html">Wireless</a></li>
-            <li><a href="apps_info.html">Apps</a></li>
-            <li><a href="microsoft_edge_info.html">Edge</a></li>
-            <li>
-                <a href="procedures_info.html">Procedures</a>
-                <ul class="dropdown">
-                    <li><a href="#">Day 1 Setup</a></li>
-                    <li><a href="#">LAN Printer Install</a></li>
-                    <li><a target="_blank" href="https://cooperatorsdev.service-now.com/ess/kb_view_customer.do?sysparm_article=KB0018559">iPhone first time setup</a></li>
-                </ul>
-            </li>
-            <li><a href="display_info.html">Display</a></li>
-            <li><a href="support_info.html">Support</a></li>
-        </ul>
+          <ul>
+              <li><a href="whats_new_info.html">Whats New</a></li>
+              <li><a href="start_menu_info.html">Start Menu</a></li>
+              <li><a href="printing_info.html" class="active">Printing</a></li>
+              <li><a href="one_drive_info.html">One Drive</a></li>
+              <li><a href="cortana_info.html">Cortana</a></li>
+              <li><a href="wireless_info.html">Wireless</a></li>
+              <li><a href="apps_info.html">Apps</a></li>
+              <li><a href="microsoft_edge_info.html">Edge</a></li>
+              <li><a href="procedures_info.html">Procedures</a></li>
+              <li><a href="display_info.html">Display</a></li>
+              <li><a href="support_info.html">Support</a></li>
+          </ul>
         </nav>
-        
+
         <hr />
 
         <div class="cobalt tile-info">
+          <div id="breadcrumbs">
+            <p><a href="../index.html">Home</a> / Printing<p>
+          </div>
         <h1>Printing</h1>
-            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in tellus et orci fermentum varius id eget sem. Nunc ut convallis tortor. Nulla accumsan, enim et varius aliquam, nibh turpis fermentum lorem, non feugiat justo quam eget tellus. Phasellus efficitur nisl eget tristique congue. Nulla viverra sapien at placerat dignissim. Fusce luctus ullamcorper nunc eu bibendum. Cras lectus lorem, ullamcorper sed est at, consectetur lacinia nisl. Morbi ac elit ligula. Donec non ante tristique, gravida sem sed, pharetra tellus. Suspendisse hendrerit blandit metus, egestas tristique lorem elementum nec. Donec id iaculis tortor, vel sollicitudin nibh. In hac habitasse platea dictumst. Proin porta consectetur enim, ut sagittis erat dignissim ut. Cras non pretium risus. In gravida placerat mollis.</p>
+        <p>When you login to your workstation, a logon script will add the first LAN Printer it finds in your office to your available printers.  However, this will not occur when you are connected
+          with VPN or using a local printer.  There are also potential issues when traveling between offices that may prevent this from happening.  To assist you with this, the following two processes can be
+          used to manually add any LAN Printer to your workstation.</p>
+        <h4>Process A</h4>
+        <ul>
+
+          <li class="printserver"><script type="text/javascript" language="javascript">
+                var ax = new ActiveXObject("WScript.Network");
+                //document.write(ax.UserName + '<br />'); //logged in account name
+                //document.write(ax.ComputerName + '<br />'); //Windows PC name
+                var computername = ax.ComputerName;
+                var officename = computername.substring(1,5);
+                var servername = "F" + officename + "S01"
+                var link = "file:\\" + "\\" + servername;
+                var message = "Click here to browse to your Print Server (" + link + ")";
+                document.write(message.link(link));
+              </script></li>
+          <li>Right click the desired printer and select <Strong>Connect...</strong></li>
+          <img src="../assets/images/printerconnect.png" alt="Right click desired printer to install"/>
+          <li>After a few seconds, the printer will download and install the appropriate drivers to your workstation.  <strong>NOTE:</strong> The printer will not tell you if it was successfully installed.</li>
+          <img src="../assets/images/printerconnectprogress.png" alt="Printer connection progress popup"/>
+          <ol>
+            <li>To confirm installation was successfull, click <strong>Start</strong> and select <strong>Devices and Printers</strong></li>
+            <li>You printer should be present on this page and may or may not be your new default printer</li>
+            <li>To assign it as your default printer, right click on the printer and select <strong>Set as default printer</strong></li>
+            <img src="../assets/images/printerdefault.png" alt="Set printer as default menu"/>
+          </ol>
+      </ul>
+      <h4>Process B</h4>
+      <ul>
+        <li>If the link in Process A did not work, this option is very similar</li>
+        <li>On the top right corner of your desktop, located in a small greenish box, click <strong>MyNetworkInfo</strong></li>
+        <img src="../assets/images/mynetworkinfo.png" alt="MyNetworkInfo button highlited"/>
+        <li>Select the <strong>Diagnostics</strong> tab</li>
+        <img src="../assets/images/diagnosticstab.png" alt="Diagnostics tab found in MyNetworkInfo"/>
+        <li>Under the Tools section on the right, click <strong>Browse \\F3xxxS01</strong> (3xxx is your office id number)</li>
+        <img src="../assets/images/browseprintserver.png" alt="Tools section found under Diagnostics tab in MyNetworkInfo"/>
+        <li>Right click the desired printer and select <Strong>Connect...</strong></li>
+        <img src="../assets/images/printerconnect.png" alt="Right click desired printer to install"/>
+        <li>After a few seconds, the printer will download and install the appropriate drivers to your workstation.  <strong>NOTE:</strong> The printer will not tell you if it was successfully installed.</li>
+        <img src="../assets/images/printerconnectprogress.png" alt="Printer connection progress popup"/>
+        <ol>
+          <li>To confirm installation was successfull, click <strong>Start</strong> and select <strong>Devices and Printers</strong></li>
+          <li>You printer should be present on this page and may or may not be your new default printer</li>
+          <li>To assign it as your default printer, right click on the printer and select <strong>Set as default printer</strong></li>
+          <img src="../assets/images/printerdefault.png" alt="Set printer as default menu"/>
+        </ol>
+      </ul>
+      <p>Contact <a href="support_info.html">Technical Support</a> for any further issues installing your LAN Printer</p>
+
+
         </div>
     </div>
 </body>

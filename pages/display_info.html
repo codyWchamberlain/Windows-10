@@ -40,42 +40,93 @@
         <h1>Welcome to the Windows 10 Instructional Dashboard</h1>
 
         <nav>
-        <ul>
-            <li><a href="whats_new_info.html">Whats-New?</a></li>
-            <li><a href="start_menu_info.html">Start-Menu</a></li>
-            <li><a href="printing_info.html">Printing</a></li>
-            <li><a href="one_drive_info.html">One-Drive</a></li>
-            <li><a href="cortana_info.html">Cortana</a></li>
-            <li><a href="wireless_info.html">Wireless</a></li>
-            <li><a href="apps_info.html">Apps</a></li>
-            <li><a href="microsoft_edge_info.html">Edge</a></li>
-            <li>
-                <a href="procedures_info.html">Procedures</a>
-                <ul class="dropdown">
-                    <li><a href="#">Day 1 Setup</a></li>
-                    <li><a href="#">LAN Printer Install</a></li>
-                    <li><a target="_blank" href="https://cooperatorsdev.service-now.com/ess/kb_view_customer.do?sysparm_article=KB0018559">iPhone first time setup</a></li>
-                </ul>
-            </li>
-            <li><a href="display_info.html">Display</a></li>
-            <li><a href="support_info.html">Support</a></li>
-        </ul>
+          <ul>
+              <li><a href="whats_new_info.html">Whats New</a></li>
+              <li><a href="start_menu_info.html">Start Menu</a></li>
+              <li><a href="printing_info.html">Printing</a></li>
+              <li><a href="one_drive_info.html">One Drive</a></li>
+              <li><a href="cortana_info.html">Cortana</a></li>
+              <li><a href="wireless_info.html">Wireless</a></li>
+              <li><a href="apps_info.html">Apps</a></li>
+              <li><a href="microsoft_edge_info.html">Edge</a></li>
+              <li><a href="procedures_info.html">Procedures</a></li>
+              <li><a href="display_info.html" class="active">Display</a></li>
+              <li><a href="support_info.html">Support</a></li>
+          </ul>
         </nav>
         <hr />
 
         <div class="green tile-info">
-            <h1>Display</h1>
-               
-            <h3>Computer Only Mode</h3>
-            <p>This mode will do just as it says, display only on the workstation.  Whether you have an external monitor plugged in or not, the display will remain on the workstation</p>
-            <h3>Duplicate Mode</h3>
-            <p>This Mode will copy your desktop to each screen. Everything you have on one screen, will appear on the other</p>
-            <h3>Extend Mode</h3>
-            <p>This mode will extend your desktop to each monitor.  You can drag windows to each monitor to make multitasking easy.</p>
-            <h3>Projector Only Mode</h3>
-            <p>This mode will display on the extneral Monitor only.  Your workstation monitor will remain blank whether it is turned on or not</p>
+          <div id="breadcrumbs">
+            <p><a href="../index.html">Home</a> / Display<p>
+          </div>
+            <h1>Display Settings</h1>
+            <p>This page will contain general information on how to adjust screen resolution and monitor setup.  With monitors increasing in size, one of the major drawbacks are the shrinking icons and text.
+              This can be remedied after following a few simple steps.<p>
+            <ul>
+              <li>Adjusting the resolution is fairly simple.  Right-click on your desktop and select <strong>Screen Resolution</strong>.</li>
+              <img src="../assets/images/screenresolutionmenus.png"></img>
+              <ol>
+                <li>From this window, you may adjust the screen resolution to your preference.  After clicking <strong>Apply</strong>, you will be asked if you want to keep the settings or revert back.
+                  It might take a few attempts until finding that perfect setting!</li>
+                <li>When you finalized your settings, remember to click <strong>Apply</strong> to save them.</li>
+              </ol>
+            </ul>
+            <p><strong>NOTE</strong>: If you have multiple displays (such as the example above), you can adjust the resolution on each monitor as needed.  Select which <strong>Display</strong> from the dropdown
+              menu.  If you are unsure which monitor to choose, use the <strong>Identify</strong> button.</p>
+            <ul>
+              <li>Adjusting the font size can help make text appear larger.  Follow the steps below to choose your best option</li>
+              <ol>
+                <li>Click the start button, type <strong>Display</strong> and press 'Enter' on your keyboard.</li>
+                <li>From Dispaly Properties, you can change your font size to Smaller - 100%, Medium - 125% and Larger - 150%</li>
+                <img src="../assets/images/fontsize.png"></img>
+                <li>Click <strong>Apply</strong> to save your settings</li>
+              </ol>
+            </ul>
+            <p><strong>NOTE</strong>: Changing your fonts from 100% (Default) may cause undesired results in some business applications.  Please change these with caution.  Remember, you can always change
+              it back should you need to.</p>
+            <h4>General Resolution Troubleshooting</h4>
+            <ul>
+              <li>Black bars appear down side of monitor</li>
+              <ol>
+                <li>The monitor does not like the resolution chosen and compensates for it adding black margins on each side.  You can change this by Right-clicking on your desktop</li>
+                <li>Select <strong>Graphics Options</strong> > <strong>Panel Fit</strong> > <strong>Built-in Display</strong> > <strong>Scale Full Screen</strong></li>
+                <img src="../assets/images/graphicsoptionsfit.png"></img>
+                <li>Contact <a href="support_info.html">Technical Support</a> for further assistance if required</li>
+              </ol>
+            </ul>
+            <ul>
+              <li>Screen Resolutions do not match</li>
+              <ol>
+                <li>This is working as intended. Screen Resolutions on most laptops can't be as large as 23" monitors.</li>
+                <li>Adjust each monitor to the best resolution possible.</li>
+                <li>Contact <a href="support_info.html">Technical Support</a> for further assistance if required</li>
+              </ol>
+            </ul>
+            <hr/>
+            <h1>Mutltiple Displays</h1>
+            <p>Configuring multiple displays can sometimes be difficult.  Please follow a few basic steps to help you along the way.</p>
+            <ul>
+              <li>Right-click on your desktop and select <strong>Screen Resolution</strong>.</li>
+              <li>From this screen, ensure the monitors match your physical setup.  Use the <strong>Identify</strong> button if needed.  In the example below, 1 is the laptop display and 2 is the external monitor.
+              The laptop is phsycally set up to the right of the external monitor.  Therefore, we need to adjust that by dragging it to the right.</li>
+              <img src="../assets/images/monitortransition.png"></img>
+              <li>The final change within Screen Resolution is ensuring your Start Menu is on the correct screen.  You can make any screen your main display by selecting the checkbox beside <strong>Make this
+                my main display</strong>.</li>
+              <img src="../assets/images/makemaindisplay.png"></img>
+              <li>After this setup has been completed, you need to decide if you would like to <strong>Clone</strong> your displays or <strong>Extend</strong> your displays.</li>
+              <ol>
+                <li><strong>Clone</strong>: Cloning your displays will effectively make them identical.  You will see a Start Menu on both screens and anything open on one will be open on the other</li>
+                <li><strong>Extend</strong>: Extending your displays will allow you to multitask easier.  It give you the ability to drag and drop windows to another monitor.  For example, you can have
+                  MS Outlook on one monitor while still working in PolicyCenter on the other.</li>
+              </ol>
+              <li>To accomplish this, Right-click on your desktop and select <strong>Graphic Options > Output To > Extended Desktop</strong> (or Clone Displays) and choose the configuration you want.</li>
+              <img src="../assets/images/graphicoptions.png"></img>
+            </ul>
+
+
         </div>
-    </div>                   
-    
+    </div>
+
 </body>
 </html>
