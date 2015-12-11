@@ -37,6 +37,24 @@ ul li {
 	color: white;
 }
 
+.language ul {
+	margin-top: 1.2em;
+}
+
+.language ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+.language ul li a {
+	color: #fff;
+}
+
+.selected-language {
+	text-decoration: underline;
+
+}
+
 ul {
 	list-style-type: decimal;
 }
@@ -45,9 +63,10 @@ ol {
 	list-style-type: disc;
 }
 
-a {
+ul li a {
 	color: #3b3b3b;
 }
+
 .printserver a{
 	color: white;
 	font-size: 1.2em;
